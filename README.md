@@ -24,7 +24,7 @@ This repository documents my first setup step for the 100Hires portfolio project
 
 ## Issues and Solutions
 
-The main challenge was making sure I followed each tool setup step in the correct order. I solved this by going through the instructions one by one, confirming each extension was installed and logged in before moving to the GitHub repository step.
+I did not run into any major issues during the setup. I followed the instructions step by step, installed both Cursor extensions, logged in successfully, created the GitHub repository, and pushed the README file.
 
-I also needed to make sure the README clearly explained what I installed, what I completed, and what issues I ran into. I used the assignment instructions as a checklist and wrote this file to match those requirements.
+To stay organized, I used the assignment instructions as a checklist and confirmed each step before moving to the next one.
 
