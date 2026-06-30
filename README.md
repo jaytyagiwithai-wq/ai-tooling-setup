@@ -28,6 +28,3 @@ The main challenge was making sure I followed each tool setup step in the correc
 
 I also needed to make sure the README clearly explained what I installed, what I completed, and what issues I ran into. I used the assignment instructions as a checklist and wrote this file to match those requirements.
 
-## Repository Link
-
-https://github.com/jaytyagiwithai-wq/ai-tooling-setup
