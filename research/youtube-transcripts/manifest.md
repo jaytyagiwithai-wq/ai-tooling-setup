@@ -1,6 +1,6 @@
 # YouTube Transcript Manifest
 
-This folder is for transcripts and transcript-derived notes.
+This folder contains YouTube transcripts and transcript-derived notes.
 
 The collection script is:
 
@@ -10,9 +10,7 @@ python scripts/collect_youtube_transcripts.py
 
 ## Current Status
 
-On 2026-07-02, `youtube-transcript-api` successfully confirmed transcript availability for the target videos listed in `research/sources.md`.
-
-When the script was rerun to write files, YouTube began returning IP/rate-limit errors. The next pass should be done after the limit clears or by using a managed API such as Supadata or TranscriptAPI.
+On 2026-07-03, 11 transcript files were collected with Supadata. `youtube-transcript-api` remains as a fallback in the script, but Supadata is preferred when `SUPADATA_API_KEY` is set locally.
 
 ## Target Videos
 

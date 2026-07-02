@@ -8,9 +8,12 @@ managed transcript API such as Supadata.
 from __future__ import annotations
 
 import datetime as dt
+import os
 import re
+import time
 from pathlib import Path
 
+import requests
 import yt_dlp
 from youtube_transcript_api import YouTubeTranscriptApi
 
@@ -80,13 +83,6 @@ def slugify(value: str) -> str:
     return value.strip("-")
 
 
-def fmt_time(seconds: float) -> str:
-    seconds = int(seconds)
-    hours, seconds = divmod(seconds, 3600)
-    minutes, seconds = divmod(seconds, 60)
-    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
-
-
 def get_metadata(video_id: str) -> dict:
     url = f"https://www.youtube.com/watch?v={video_id}"
     options = {"quiet": True, "skip_download": True, "no_warnings": True}
@@ -94,22 +90,73 @@ def get_metadata(video_id: str) -> dict:
         return ydl.extract_info(url, download=False)
 
 
+def fetch_supadata_transcript(url: str) -> tuple[str, list[dict]]:
+    api_key = os.environ["SUPADATA_API_KEY"]
+    last_error: Exception | None = None
+
+    for attempt in range(1, 4):
+        try:
+            response = requests.get(
+                "https://api.supadata.ai/v1/transcript",
+                params={"url": url},
+                headers={"x-api-key": api_key},
+                timeout=120,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            return payload.get("lang", "unknown"), payload.get("content", [])
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt < 3:
+                time.sleep(5 * attempt)
+
+    raise RuntimeError(f"Supadata transcript request failed for {url}") from last_error
+
+
+def fetch_youtube_transcript(video_id: str) -> tuple[str, list[dict]]:
+    transcript_api = YouTubeTranscriptApi()
+    transcript = transcript_api.fetch(video_id)
+    return "en", [
+        {
+            "text": item.text,
+            "offset": int(item.start * 1000),
+            "duration": int(item.duration * 1000),
+        }
+        for item in transcript
+    ]
+
+
+def fmt_ms(milliseconds: int) -> str:
+    seconds = int(milliseconds / 1000)
+    hours, seconds = divmod(seconds, 3600)
+    minutes, seconds = divmod(seconds, 60)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
 def main() -> None:
     out_dir = Path("research/youtube-transcripts")
     out_dir.mkdir(parents=True, exist_ok=True)
-    transcript_api = YouTubeTranscriptApi()
     collected_at = dt.datetime.now(dt.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+    use_supadata = bool(os.environ.get("SUPADATA_API_KEY"))
+    tool_name = "supadata" if use_supadata else "youtube-transcript-api"
 
     for video in VIDEOS:
         video_id = video["video_id"]
         url = f"https://www.youtube.com/watch?v={video_id}"
         metadata = get_metadata(video_id)
-        transcript = transcript_api.fetch(video_id)
+        if use_supadata:
+            lang, transcript = fetch_supadata_transcript(url)
+            time.sleep(2.1)
+        else:
+            lang, transcript = fetch_youtube_transcript(video_id)
 
         upload_date = metadata.get("upload_date") or "unknown-date"
         title = metadata.get("title") or video["title"]
         channel = metadata.get("channel") or "unknown channel"
         filename = f"{upload_date}-{slugify(video['expert'])}-{video_id}.md"
+        if (out_dir / filename).exists():
+            print(f"Skipped existing {filename}")
+            continue
 
         lines = [
             "---",
@@ -120,7 +167,8 @@ def main() -> None:
             f"url: {url}",
             f"published: {upload_date}",
             f"collected_at: {collected_at}",
-            "tool: youtube-transcript-api",
+            f"tool: {tool_name}",
+            f"language: {lang}",
             "---",
             "",
             "# Transcript",
@@ -128,7 +176,9 @@ def main() -> None:
         ]
 
         for item in transcript:
-            lines.append(f"[{fmt_time(item.start)}] {item.text}")
+            offset = int(item.get("offset", 0))
+            text = item.get("text", "")
+            lines.append(f"[{fmt_ms(offset)}] {text}")
 
         (out_dir / filename).write_text("\n".join(lines) + "\n", encoding="utf-8")
         print(f"Wrote {filename}")

@@ -24,14 +24,14 @@ Collection date: 2026-07-02
 
 | Expert | Video | Date | Link | Status |
 | --- | --- | --- | --- | --- |
-| Sam Dunning | A Complete Guide to AI SEO in 2026 (AEO, GEO, LLMO) | 2025-11-12 | https://www.youtube.com/watch?v=e9ccLnRmeo0 | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Ryan Law | AI Writing at Scale: Ahrefs' Step-by-Step Workflow | 2025-08-05 | https://www.youtube.com/watch?v=D7LBx8RFOcQ | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Ryan Law | How to Win in AI Search (Real Data, No Hype) | 2025-10-28 | https://www.youtube.com/watch?v=mL1W1SMtTT4 | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Ryan Law | How to automate blog writing with AI from keyword to published | 2026-04-28 | https://www.youtube.com/watch?v=iVZrVeESnFQ | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Kevin Indig | SEO in the AI Era: What Marketers Need to Know | 2025-05-23 | https://www.youtube.com/watch?v=eepyi-NYFiM | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Ross Simmonds | Ross Simmonds on Unlocking the Power of Content | 2025-01-21 | https://www.youtube.com/watch?v=u41_Sq91SW0 | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Bernard Huang | How GEO Actually Works | 2026-01-13 | https://www.youtube.com/watch?v=4KyYqe1s_XY | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Eli Schwartz | Product-Led SEO in AI Era | 2026-04-29 | https://www.youtube.com/watch?v=x5CgYCRLgbc | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Andy Crestodina | How AI is Reshaping Your SEO Strategy | 2025-09-09 | https://www.youtube.com/watch?v=jXUPJ_z1i4Q | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Amanda Natividad | How to Win with Zero Click Content | 2025-08-01 | https://www.youtube.com/watch?v=t6Yxdw-Sid4 | Transcript available during API test; file write blocked by YouTube rate limit. |
-| Mike King | The Brave New World of SEO - SEO Week 2025 | 2025-08-01 | https://www.youtube.com/watch?v=Bs6-ROULCLk | Transcript available during API test; file write blocked by YouTube rate limit. |
+| Sam Dunning | A Complete Guide to AI SEO in 2026 (AEO, GEO, LLMO) | 2025-11-12 | https://www.youtube.com/watch?v=e9ccLnRmeo0 | Transcript collected in `research/youtube-transcripts/20251112-sam-dunning-e9ccLnRmeo0.md`. |
+| Ryan Law | AI Writing at Scale: Ahrefs' Step-by-Step Workflow | 2025-08-05 | https://www.youtube.com/watch?v=D7LBx8RFOcQ | Transcript collected in `research/youtube-transcripts/20250805-ryan-law-D7LBx8RFOcQ.md`. |
+| Ryan Law | How to Win in AI Search (Real Data, No Hype) | 2025-10-28 | https://www.youtube.com/watch?v=mL1W1SMtTT4 | Transcript collected in `research/youtube-transcripts/20251028-ryan-law-mL1W1SMtTT4.md`. |
+| Ryan Law | How to automate blog writing with AI from keyword to published | 2026-04-28 | https://www.youtube.com/watch?v=iVZrVeESnFQ | Transcript collected in `research/youtube-transcripts/20260428-ryan-law-iVZrVeESnFQ.md`. |
+| Kevin Indig | SEO in the AI Era: What Marketers Need to Know | 2025-05-23 | https://www.youtube.com/watch?v=eepyi-NYFiM | Transcript collected in `research/youtube-transcripts/20250523-kevin-indig-eepyi-NYFiM.md`. |
+| Ross Simmonds | Ross Simmonds on Unlocking the Power of Content | 2025-01-21 | https://www.youtube.com/watch?v=u41_Sq91SW0 | Transcript collected in `research/youtube-transcripts/20250121-ross-simmonds-u41_Sq91SW0.md`. |
+| Bernard Huang | How GEO Actually Works | 2026-01-13 | https://www.youtube.com/watch?v=4KyYqe1s_XY | Transcript collected in `research/youtube-transcripts/20260113-bernard-huang-4KyYqe1s_XY.md`. |
+| Eli Schwartz | Product-Led SEO in AI Era | 2026-04-29 | https://www.youtube.com/watch?v=x5CgYCRLgbc | Transcript collected in `research/youtube-transcripts/20260429-eli-schwartz-x5CgYCRLgbc.md`. |
+| Andy Crestodina | How AI is Reshaping Your SEO Strategy | 2025-09-09 | https://www.youtube.com/watch?v=jXUPJ_z1i4Q | Transcript collected in `research/youtube-transcripts/20250909-andy-crestodina-jXUPJ_z1i4Q.md`. |
+| Amanda Natividad | How to Win with Zero Click Content | 2025-08-01 | https://www.youtube.com/watch?v=t6Yxdw-Sid4 | Transcript collected in `research/youtube-transcripts/20250801-amanda-natividad-t6Yxdw-Sid4.md`. |
+| Mike King | The Brave New World of SEO - SEO Week 2025 | 2025-08-01 | https://www.youtube.com/watch?v=Bs6-ROULCLk | Transcript collected in `research/youtube-transcripts/20250801-mike-king-Bs6-ROULCLk.md`. |

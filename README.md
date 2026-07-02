@@ -10,7 +10,7 @@ I chose this topic because B2B SaaS teams are trying to answer a practical quest
 
 - 10 high-signal experts who actively publish or practice AI SEO, AEO, GEO, content strategy, and B2B SaaS organic growth.
 - Public LinkedIn post references organized by author in `research/linkedin-posts/`.
-- YouTube video metadata and transcript collection targets in `research/youtube-transcripts/`.
+- YouTube video transcripts collected with Supadata in `research/youtube-transcripts/`.
 - Additional article, newsletter, podcast, and tool notes in `research/other/`.
 - A reusable Python transcript collection script in `scripts/collect_youtube_transcripts.py`.
 
@@ -41,16 +41,16 @@ The strongest recurring themes across the source set are:
 
 ## Collection Notes
 
-I used public search, public LinkedIn post pages, YouTube metadata, `yt-dlp`, and `youtube-transcript-api` during collection.
+I used public search, public LinkedIn post pages, YouTube metadata, `yt-dlp`, `youtube-transcript-api`, and Supadata during collection.
 
-The transcript API successfully returned transcript availability for the selected YouTube videos during initial testing, but YouTube later returned IP/rate-limit blocks while writing files. I left the collection script in the repo so the transcript pass can be rerun from a clean network session or swapped to Supadata/TranscriptAPI if an API key is available.
+YouTube initially returned IP/rate-limit blocks through the free transcript library, so I switched the collection script to use Supadata when `SUPADATA_API_KEY` is available. The API key is not stored in the repository.
 
 ## Next Step
 
-Run the transcript script after the YouTube rate limit clears:
+Rerun the transcript script if new videos are added:
 
 ```bash
 python scripts/collect_youtube_transcripts.py
 ```
 
-Then commit the generated transcript files as the next small commit.
+When using Supadata, set `SUPADATA_API_KEY` locally before running the script.
