@@ -13,6 +13,7 @@ I chose this topic because B2B SaaS teams are trying to answer a practical quest
 - YouTube video transcripts collected with Supadata in `research/youtube-transcripts/`.
 - Additional article, newsletter, podcast, and tool notes in `research/other/`.
 - A reusable Python transcript collection script in `scripts/collect_youtube_transcripts.py`.
+- A strategy layer that turns the raw research into a playbook outline, source synthesis, and content decision rubric.
 
 ## Repository Structure
 
@@ -22,6 +23,10 @@ research/
   linkedin-posts/
   youtube-transcripts/
   other/
+    expert-takeaways.md
+    playbook-outline.md
+    content-decision-rubric.md
+    research-synthesis.md
 scripts/
   collect_youtube_transcripts.py
 requirements.txt
@@ -38,6 +43,14 @@ The strongest recurring themes across the source set are:
 - B2B SaaS teams need bottom-funnel and product-led content, not just high-volume informational posts.
 - Distribution and third-party validation matter more as AI makes generic content cheap.
 - Measurement needs to include AI visibility, branded demand, qualified pipeline, and content refresh performance.
+
+## Standout Layer
+
+To make the research useful for a real future playbook, I added:
+
+- `research/other/research-synthesis.md`: what the experts agree on, where they differ, and what most teams get wrong.
+- `research/other/playbook-outline.md`: a proposed B2B SaaS AI SEO playbook built from the collected sources.
+- `research/other/content-decision-rubric.md`: a practical scoring system for deciding what to create, refresh, merge, or skip.
 
 ## Collection Notes
 
