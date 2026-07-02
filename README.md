@@ -57,13 +57,3 @@ After collecting the raw material, I added three analysis files:
 I used public search, public LinkedIn pages, YouTube metadata, `yt-dlp`, `youtube-transcript-api`, and Supadata.
 
 The free YouTube transcript library hit IP/rate-limit blocks, so I added Supadata support to the script. The Supadata key was only used locally and is not stored in the repo.
-
-## Next Step
-
-Rerun the transcript script if new videos are added:
-
-```bash
-python scripts/collect_youtube_transcripts.py
-```
-
-When using Supadata, set `SUPADATA_API_KEY` locally before running the script.
