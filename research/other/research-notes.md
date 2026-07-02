@@ -2,7 +2,7 @@
 
 ## Working Thesis
 
-AI-powered SEO content production is not "publish more articles with AI." The stronger pattern from the source set is:
+AI-powered SEO content production is not just "publish more articles with AI." The stronger pattern from the source set is:
 
 1. Start with product, ICP, buying journey, and bottom-funnel questions.
 2. Use AI for research acceleration, clustering, outline testing, refresh analysis, and production assistance.

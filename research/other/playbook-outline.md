@@ -12,15 +12,15 @@ Working title:
 
 ## Positioning
 
-Most AI SEO advice focuses on producing more content. This playbook should focus on producing **more defensible content**.
+Most AI SEO advice is still framed around producing more content. I think the better angle is producing **more defensible content**: pages with a real reason to exist.
 
 The promise:
 
-> Build an AI-assisted SEO system that turns product knowledge, customer language, and expert insight into content that buyers trust and AI systems can cite.
+> Build an AI-assisted SEO system that turns product knowledge, customer language, and expert insight into content buyers trust and AI systems can cite.
 
 ## Chapter 1: Pick The Right Content Battles
 
-Goal: Stop making content just because a keyword exists.
+Goal: Stop making pages just because a keyword exists.
 
 Core ideas:
 
@@ -41,7 +41,7 @@ Recommended assets:
 
 ## Chapter 2: Build A Differentiated Input Library
 
-Goal: Give AI better raw material than competitors have.
+Goal: Give AI better raw material than competitors have. This is probably the biggest difference between good AI content and bland AI content.
 
 Inputs to collect:
 
@@ -101,7 +101,7 @@ Avoid:
 
 Goal: Scale the boring parts without outsourcing the thinking.
 
-Suggested workflow:
+Draft workflow:
 
 1. Research buyer intent and SERP/AI answer patterns.
 2. Pull differentiated inputs from the input library.
@@ -124,7 +124,7 @@ Quality gates:
 
 ## Chapter 5: Distribution As SEO
 
-Goal: Create signals outside the company blog.
+Goal: Create signals outside the company blog. This matters because the company blog is not the only place buyers, or AI systems, learn who to trust.
 
 Distribution channels:
 
@@ -147,7 +147,7 @@ Why it matters:
 
 ## Chapter 6: Measure Beyond Traffic
 
-Goal: Connect AI SEO content to business outcomes.
+Goal: Connect AI SEO content to business outcomes, not just traffic charts.
 
 Metrics to track:
 
@@ -200,4 +200,4 @@ Week 4:
 
 ## Final Recommendation
 
-The best B2B SaaS teams will not win by publishing the most AI content. They will win by creating the best system for turning real expertise into content that is structured, distributed, and measured better than competitors.
+My strongest takeaway: B2B SaaS teams will not win by publishing the most AI content. They will win by building a better system for turning real expertise into content that buyers can use, AI systems can retrieve, and sales teams can actually benefit from.

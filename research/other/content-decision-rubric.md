@@ -1,6 +1,6 @@
 # Content Decision Rubric
 
-Purpose: Decide whether a B2B SaaS team should create, refresh, merge, distribute, or skip an AI-assisted SEO content asset.
+Purpose: give a simple way to decide whether a B2B SaaS team should create, refresh, merge, distribute, or skip an AI-assisted SEO asset.
 
 Score each category from 0 to 3.
 
@@ -26,14 +26,14 @@ Score each category from 0 to 3.
 | Measurement clarity | Do we know what success looks like beyond traffic? | 0-3 |
 | Maintenance cost | Can we keep this accurate as product, market, or AI search behavior changes? | 0-3 |
 
-Maximum score: 30
+Maximum score: 30. The score is not meant to be perfect; it is meant to slow down bad content ideas before they become 2,000-word AI drafts.
 
 ## Decision Rules
 
 | Score | Decision | What to do |
 | --- | --- | --- |
 | 24-30 | Create or heavily refresh | Prioritize now. Use SME input and make it a flagship asset. |
-| 18-23 | Create after strengthening inputs | Good opportunity, but collect more proof, examples, or distribution angles first. |
+| 18-23 | Create after strengthening inputs | Good opportunity, but collect more proof, examples, or a sharper distribution angle first. |
 | 12-17 | Refresh, merge, or narrow scope | The topic may be useful, but it is probably too generic or too weak as a standalone page. |
 | 0-11 | Skip | Do not create with AI just to fill a calendar. |
 
@@ -41,7 +41,7 @@ Maximum score: 30
 
 ### Create
 
-Use when:
+Create when:
 
 - Buyer intent is strong.
 - Product relevance is obvious.
@@ -50,7 +50,7 @@ Use when:
 
 ### Refresh
 
-Use when:
+Refresh when:
 
 - The page already ranks or converts but is outdated.
 - AI search behavior has changed the answer format.
@@ -59,7 +59,7 @@ Use when:
 
 ### Merge
 
-Use when:
+Merge when:
 
 - Multiple thin pages answer the same buyer question.
 - The content competes with itself.
@@ -67,7 +67,7 @@ Use when:
 
 ### Distribute
 
-Use when:
+Distribute when:
 
 - The page is good but invisible.
 - The content needs third-party validation.
@@ -75,7 +75,7 @@ Use when:
 
 ### Skip
 
-Use when:
+Skip when:
 
 - The topic is only keyword-driven.
 - The team has no original insight.

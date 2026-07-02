@@ -1,19 +1,19 @@
 # AI-Powered SEO Content Production Research
 
-This repository is now being used for a 100Hires research project on:
+This repo is for a 100Hires research assignment on:
 
 **AI-powered SEO content production for B2B SaaS.**
 
-I chose this topic because B2B SaaS teams are trying to answer a practical question right now: how do you use AI to produce, refresh, and distribute SEO content without creating generic content that fails in Google, AI Overviews, ChatGPT, Perplexity, and other answer engines?
+I chose this topic because it sits right in the middle of what a lot of SaaS marketers are trying to figure out: how to use AI for SEO without flooding the internet with generic posts that nobody trusts.
 
 ## What I Collected
 
-- 10 high-signal experts who actively publish or practice AI SEO, AEO, GEO, content strategy, and B2B SaaS organic growth.
+- 10+ experts who actually work in SEO/content/growth, not just people writing broad AI takes.
 - Public LinkedIn post references organized by author in `research/linkedin-posts/`.
 - YouTube video transcripts collected with Supadata in `research/youtube-transcripts/`.
 - Additional article, newsletter, podcast, and tool notes in `research/other/`.
 - A reusable Python transcript collection script in `scripts/collect_youtube_transcripts.py`.
-- A strategy layer that turns the raw research into a playbook outline, source synthesis, and content decision rubric.
+- A strategy layer so the repo is not just links and transcripts.
 
 ## Repository Structure
 
@@ -34,19 +34,19 @@ requirements.txt
 
 ## Why These Experts
 
-The expert list prioritizes people with operational credibility: agency founders, SaaS content leads, SEO software operators, researchers, and advisors who publish detailed thinking from real client, product, or audience work.
+I tried to avoid the obvious "top AI SEO influencers" list. The people here are a mix of SaaS content operators, agency founders, SEO researchers, tool founders, and B2B marketers with public work that connects to real content systems.
 
-The strongest recurring themes across the source set are:
+The main patterns I saw:
 
-- AI content only works when it is tied to differentiated inputs, subject-matter expertise, and clear user intent.
-- AI search visibility is moving beyond rankings and clicks toward citations, mentions, entity strength, and passage-level relevance.
-- B2B SaaS teams need bottom-funnel and product-led content, not just high-volume informational posts.
-- Distribution and third-party validation matter more as AI makes generic content cheap.
-- Measurement needs to include AI visibility, branded demand, qualified pipeline, and content refresh performance.
+- AI is useful, but only after the team has real inputs: customer calls, SME notes, product proof, examples, and opinions.
+- AI search is pushing SEO beyond rankings/clicks into mentions, citations, entities, and passage-level answers.
+- B2B SaaS teams should care more about bottom-funnel and product-led content than pumping out top-funnel posts.
+- Distribution matters more now because third-party mentions help both buyers and AI systems understand who is credible.
+- Traffic alone is not enough. The better measurement set includes AI visibility, branded demand, pipeline influence, and refresh performance.
 
-## Standout Layer
+## Added Analysis
 
-To make the research useful for a real future playbook, I added:
+After collecting the raw material, I added three analysis files:
 
 - `research/other/research-synthesis.md`: what the experts agree on, where they differ, and what most teams get wrong.
 - `research/other/playbook-outline.md`: a proposed B2B SaaS AI SEO playbook built from the collected sources.
@@ -54,9 +54,9 @@ To make the research useful for a real future playbook, I added:
 
 ## Collection Notes
 
-I used public search, public LinkedIn post pages, YouTube metadata, `yt-dlp`, `youtube-transcript-api`, and Supadata during collection.
+I used public search, public LinkedIn pages, YouTube metadata, `yt-dlp`, `youtube-transcript-api`, and Supadata.
 
-YouTube initially returned IP/rate-limit blocks through the free transcript library, so I switched the collection script to use Supadata when `SUPADATA_API_KEY` is available. The API key is not stored in the repository.
+The free YouTube transcript library hit IP/rate-limit blocks, so I added Supadata support to the script. The Supadata key was only used locally and is not stored in the repo.
 
 ## Next Step
 

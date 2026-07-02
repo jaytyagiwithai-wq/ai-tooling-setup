@@ -2,16 +2,16 @@
 
 Topic: AI-powered SEO content production for B2B SaaS
 
-## Cross-Source Patterns
+## Patterns I Would Carry Forward
 
-- AI content is strongest when it accelerates expert workflows rather than replacing expert judgment.
+- AI content is strongest when it speeds up expert workflows instead of replacing expert judgment.
 - The winning inputs are proprietary: customer calls, product data, SME interviews, examples, benchmarks, demos, and original opinions.
 - AI search changes what must be measured: mentions, citations, entity strength, passage retrieval, branded demand, and qualified pipeline matter alongside traffic.
 - B2B SaaS should prioritize bottom-funnel and product-led content before scaling generic educational articles.
 - Distribution is becoming part of SEO because AI systems and buyers both learn from third-party mentions, social posts, podcasts, YouTube, reviews, and comparison content.
 - Content structure matters more in AI search: clear answers, precise sections, strong entities, evidence, and retrievable passages are easier for LLM systems to reuse.
 
-## Expert-Specific Angles
+## How I Would Use Each Expert Later
 
 | Expert | Best use in later playbook |
 | --- | --- |
@@ -26,9 +26,9 @@ Topic: AI-powered SEO content production for B2B SaaS
 | Mike King | Technical SEO, relevance engineering, passage-level retrieval, and machine-readable content structure. |
 | Sam Dunning | B2B SaaS pipeline focus, AI SEO tied to demo demand, and practical search-to-revenue content strategy. |
 
-## Standout Research Direction
+## Best Direction For A Later Playbook
 
-The strongest final playbook should not be called "how to write blog posts with AI." A better angle is:
+I would avoid making the final playbook sound like "how to write blog posts with AI." A stronger angle is:
 
 **How B2B SaaS companies build an AI SEO engine that turns expert inputs into retrievable, cited, revenue-focused content.**
 
